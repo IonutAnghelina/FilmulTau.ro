@@ -1,0 +1,98 @@
+:root {
+    --bgColor:#FFDBDB;
+    --color2:#8E94DE;
+    --color3:#A9F5C1;
+    --color4:#E0D8B6;
+    --color5:#FA918D;
+}
+body
+{
+    background: var(--color4);
+}
+
+
+hr{
+    height: 5px;
+ /**   background-color:var(--color5);**/
+    background-image:linear-gradient(var(--color4),var(--color5),var(--color4));
+    /**background: radial-gradient(circle , #3f87a6, #ebf8e1, #f69d3c);**/
+   /** border: none;**/
+}
+
+
+hr:before {
+    content: '';
+    border-radius: 100%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image:radial-gradient(var(--color5),var(--color4),var(--color5));
+    left: 50%;
+    margin: -10px;
+    box-shadow: inherit
+  }
+
+
+header {
+    grid-area: g0;
+}
+
+footer {
+    grid-area: g9;
+}
+
+.g2
+{
+    grid-area: g2;
+}
+
+.g3
+{
+    grid-area: g3;
+}
+
+.g4
+{
+    grid-area: g4;
+}
+
+.g5
+{
+    grid-area: g5;
+}
+
+.g6
+{
+    grid-area: g6;
+}
+
+.g7
+{
+    grid-area: g7;
+}
+
+.g8
+{
+    grid-area: g8;
+}
+
+
+.grid-container {
+    display: grid;
+   /** grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);**/
+    grid-template-areas:
+      "g3 g2 g2 g4"
+      "g8 g8 g8 g8"
+      "g7 g7 g7 g7";
+
+    
+}
+
+.grid-container > div {
+    
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+  }
+
