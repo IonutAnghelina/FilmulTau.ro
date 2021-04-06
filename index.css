@@ -7,7 +7,7 @@
 }
 body
 {
-    background: var(--color4);
+    background: var(--color3);
 }
 
 
@@ -39,41 +39,49 @@ header {
 
 footer {
     grid-area: g9;
+    font-size: 10vw;
 }
 
 .g2
 {
     grid-area: g2;
+    font-size: 10vw;
 }
 
 .g3
 {
     grid-area: g3;
+    font-size: 10vw;
 }
 
 .g4
 {
     grid-area: g4;
+    font-size: 10vw;
 }
 
 .g5
 {
     grid-area: g5;
+    font-size: 10vw;
 }
 
 .g6
 {
     grid-area: g6;
+    font-size: 10vw;
 }
 
 .g7
 {
     grid-area: g7;
+    font-size: 10vw;
 }
 
 .g8
 {
     grid-area: g8;
+    font-size: 10vw;
 }
 
 
@@ -85,7 +93,7 @@ footer {
       "g3 g2 g2 g4"
       "g8 g8 g8 g8"
       "g7 g7 g7 g7";
-
+    
     
 }
 
@@ -95,4 +103,160 @@ footer {
     padding: 20px 0;
     font-size: 20px;
   }
+
+
+.link-top{
+    position: fixed;
+    display:block;
+    opacity:1;
+
+    bottom:0;
+    right:0;
+    width:50px;
+    height:50px;
+    background-color: var(--color2);
+    border-radius: 0.7rem;
+    border-bottom-right-radius: 0px;
+    border:1px solid var(--color2);
+    box-shadow:0px 0px 7px 2px inset var(--color2);
+    overflow:visible;
+    transform: rotateY(0deg) rotate(45deg);
+    
+
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.triangle{
+    position:absolute;
+    bottom:15px;
+    right:18px;
+    border-bottom:20px solid transparent;
+    
+    border-top:0px solid var(--color2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left:7px solid var(--color2);
+    border-right:7px solid var(--color2);
+    background-color: var(--color5);   
+    background-clip: border-box;
+    padding:0;
+    width:0;
+    box-sizing:border-box;
+    opacity:1;
+    transform: rotateY(0deg) rotate(315deg);
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+
+    transition-property: border-top-color;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+
+    transition-property: border-left-color;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+
+    transition-property: border-right-color;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.link-top:hover
+{
+    background-color:var(--color5);
+}
+
+.link-top:hover .triangle
+{
+    background-color: var(--color2);
+    border-top-color: var(--color5);
+    border-left-color: var(--color5);
+    border-right-color: var(--color5);
+}
+
+
+/**.link-top {
+    display:link-top;
+    
+}
+  
+.triangle1 {
+    opacity:0.5;
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 28.284px solid var(--color2);
+    box-shadow:0px 0px 7px 2px inset var(--color2);
+    overflow:visible;
+  } 
+  
+  .triangle2 {
+    opacity:0.5;
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 28.284px solid var(--color2);
+    box-shadow:0px 0px 7px 2px inset var(--color2);
+    overflow:visible;
+}
+
+.link-top:hover .triangle1{
+    opacity:1;
+}
+
+.link-top:hover .triangle2{
+    opacity:1;
+}**/
+
+
+/**#diamond {
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-bottom-color: var(--color4);
+    position: relative;
+    top: -25px;
+  }
+  #diamond:after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 25px;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-top-color: var(--color4);
+  }
+
+/**#triunghi{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    border-bottom:40px solid transparent;
+    border-top:0px solid transparent;
+    border-left:20px solid white;
+    border-right:20px solid white;
+    background-color:var(--culoare-mov);   
+    background-clip: border-box;
+    padding:0;
+    width:0;
+    box-sizing:border-box;
+}
+#triunghi::after{
+    position:absolute;
+    display: block;
+    left:-20px;
+    content:" ";
+    width:40px;
+    height:40px;
+    background-image: red;
+    background-position: center 15px;
+    background-repeat:no-repeat;
+    background-size: 20px 20px;
+
+}**/
 
