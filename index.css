@@ -82,14 +82,13 @@ hr:before {
 }
 
 
-#grid-pagina {
+main {
     display: grid;
-    /* harta gridului; din harta rezulta 3 coloane*/
-    grid-template-areas: 
-    "header header header header" 
+    grid-template-areas:  
     "g1     g1     g1     g1"
-    "g2     g2     g3     g3"
-    "g4     g4     g4     g4";
+    "g3     g2     g2     g4"
+    "g8     g8     g8     g8"
+    "g7     g7     g5     g6";
 
     padding: var(--padding-intern);
     /*spatiu intre celulele de grid*/
