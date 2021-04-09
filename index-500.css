@@ -23,3 +23,8 @@ section{
     width:75px;
 }
 
+#tabel
+{
+    overflow-x: auto;
+    max-width: 10em;
+}

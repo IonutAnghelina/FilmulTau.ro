@@ -21,10 +21,7 @@ main{
     grid-gap:2rem;
 }
 
-table
-{
-    overflow-x: auto;
-}
+
 
 p.intro{
     text-align: left;
@@ -55,4 +52,10 @@ iframe{
 
 #container-video{
     display: none;
+}
+
+#tabel
+{
+    overflow-x: auto;
+    max-width: 10em;
 }

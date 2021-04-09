@@ -12,13 +12,10 @@ html {
 }
 
 body {
-    --culoare-mov: #C886FF;
-    --culoare-roz-inchis: rgb(229, 173, 198);
-    --culoare-roz-inchis-t: rgb(229, 173, 198, 0.5);
-    --cl-marcare: rgb(255, 219, 235);
+    
     margin-top: 0;
     margin-bottom: 0;
-    --body-padding: 3rem;
+    --body-padding: 1rem;
     --padding-intern: 4%;
     /*am adaugat doua imagini de background separandu-le cu virgula*/
     background: var(--color3);
@@ -329,3 +326,8 @@ table tr  td:first-child
     border-radius:6px;
     overflow:hidden;
 }**/
+
+#tabel
+{
+    overflow-x: auto;
+}
