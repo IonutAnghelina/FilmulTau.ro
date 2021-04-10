@@ -1,0 +1,31 @@
+@import "orar.css";
+html{
+    font-size:11px;
+}
+
+body{
+    --body-padding:0px;
+    
+}
+h1{
+    text-align: center;
+}
+
+main{
+    display:block;
+}
+
+section{
+    margin-top:1rem;
+}
+
+.taburi-iframe a{
+    text-decoration:none;
+    width:75px;
+}
+
+#tabel
+{
+    overflow-x: auto;
+    max-width: 10em;
+}
