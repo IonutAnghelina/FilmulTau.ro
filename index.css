@@ -193,18 +193,10 @@ figcaption
     box-sizing: border-box;
     opacity: 0.5;
     transform: rotateY(0deg) rotate(315deg);
-    transition-property: background-color;
+    transition-property: background-color,border-top-color,border-left-color,border-right-color;
     transition-duration: 0.5s;
     transition-delay: 0s;
-    transition-property: border-top-color;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
-    transition-property: border-left-color;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
-    transition-property: border-right-color;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
+    
 }
 
 .link-top:hover {
@@ -264,3 +256,12 @@ figcaption
     width: 150px;
 }
 
+#banner
+{
+    background:orange;
+    color: black;
+    text-align: justify;
+    position:absolute;
+    
+    opacity:0.8;
+}

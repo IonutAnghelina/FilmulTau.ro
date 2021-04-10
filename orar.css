@@ -65,8 +65,9 @@ th {
     overflow-x: auto;
 }
 
-#actualTableRow:hover
+#actualTableRow:hover td
 {
-    color:crimson;
+    background:purple;
+    color:yellow;
 }
 
