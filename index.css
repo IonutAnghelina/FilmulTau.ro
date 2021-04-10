@@ -1,4 +1,5 @@
 @import "orar.css";
+@import "banner.css";
 
 :root {
     --bgColor: #FFDBDB;
@@ -256,12 +257,3 @@ figcaption
     width: 150px;
 }
 
-#banner
-{
-    background:orange;
-    color: black;
-    text-align: justify;
-    position:absolute;
-    
-    opacity:0.8;
-}
