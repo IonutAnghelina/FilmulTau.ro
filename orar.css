@@ -17,7 +17,7 @@
     border-collapse:collapse;
 }
 
-#col-title{
+.col-title{
     background-image: linear-gradient(var(--color4),var(--color2),var(--color4));
     
     
@@ -25,12 +25,12 @@
 
 
 
-#odd-col
+.odd-col
 {
     background:lightyellow;
 }
 
-#even-col
+.even-col
 {
     background:lightblue;
 }
@@ -65,7 +65,7 @@ th {
     overflow-x: auto;
 }
 
-#actualTableRow:hover td
+.actualTableRow:hover td
 {
     background:purple;
     color:yellow;
