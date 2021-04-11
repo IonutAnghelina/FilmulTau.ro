@@ -17,7 +17,8 @@
 @keyframes bannerAnimation
 {
     0% {background: orange; top:0px;color:black;opacity:1;}
-    50%   {background: cyan; top: -20px;color:red;opacity:1;}
+    25%   {background: cyan; top: -20px;color:red;opacity:1;}
+    50% {background: orange; top:0px;color:black;opacity:1;}
     99% {background: orange; top:0px;color:black;opacity:1;}
     100% {opacity:0;}
 }
