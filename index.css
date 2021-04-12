@@ -1,5 +1,6 @@
 @import "orar.css";
 @import "banner.css";
+@import "nav.css";
 
 :root {
     --bgColor: #FFDBDB;
