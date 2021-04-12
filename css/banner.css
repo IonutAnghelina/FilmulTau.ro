@@ -1,0 +1,25 @@
+#banner
+{
+    background:orange;
+    color: black;
+    text-align: center;
+    position:relative;
+    opacity:1;
+    
+    animation-name: bannerAnimation;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bannerAnimation
+{
+    0% {background: orange; top:0px;color:black;opacity:1;}
+    25%   {background: cyan; top: -20px;color:red;opacity:1;}
+    50% {background: orange; top:0px;color:black;opacity:1;}
+    99% {background: orange; top:0px;color:black;opacity:1;}
+    100% {opacity:0;}
+}
+
