@@ -79,6 +79,23 @@ ul.meniu .suboption:hover
 {
     background:red;
 }
+
+.suboption::before
+{   
+    content: "\2192";
+    opacity:0;
+}
+
+ul.meniu .suboption:hover
+{
+    background:red;
+}
+
+ul.meniu .suboption:hover:before
+{
+    opacity:1;
+    
+}
 /**@keyframes animatieMeniu1 {
     0% {
       background-image:purple;
@@ -87,7 +104,7 @@ ul.meniu .suboption:hover
       background-image: radial-gradient(purple,white);
     }
   }**/
-  
+
 
 ul.meniu a {
   transition: background 700ms linear;
