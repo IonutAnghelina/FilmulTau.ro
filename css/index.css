@@ -46,25 +46,7 @@ main {
     border-right: grey;
 }
 
-hr {
-    height: 5px;
-    /**   background-color:var(--color5);**/
-    background-image:linear-gradient(var(--color4), var(--color5), var(--color4));
-    /**background: radial-gradient(circle , #3f87a6, #ebf8e1, #f69d3c);**/
-    /** border: none;**/
-}
 
-hr:before {
-    content: '';
-    border-radius: 100%;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    background-image: radial-gradient(var(--color5), var(--color4), var(--color5));
-    left: 50%;
-    margin: -10px;
-    box-shadow: inherit
-}
 
 .h1>span {
     font-family: 'Dancing Script', cursive;
