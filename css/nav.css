@@ -65,12 +65,29 @@ nav ul.meniu li div {
   outline: 1px solid black;
 }
 
-ul.meniu a:hover {
-  background: pink;
-}
+
+
 ul.meniu div:hover {
-  background: pink;
+    
+    background-image: radial-gradient(purple,white);
+   /**animation-name: animatieMeniu1;
+   animation-iteration-count: 1;
+   animation-duration: 1s;**/
 }
+
+ul.meniu .suboption:hover
+{
+    background:red;
+}
+/**@keyframes animatieMeniu1 {
+    0% {
+      background-image:purple;
+    }
+    100% {
+      background-image: radial-gradient(purple,white);
+    }
+  }**/
+  
 
 ul.meniu a {
   transition: background 700ms linear;
@@ -78,6 +95,7 @@ ul.meniu a {
 ul.meniu div {
   transition: background 700ms linear;
 }
+
 
 nav ul.meniu > li:hover > ul {
   display: block;
@@ -112,3 +130,4 @@ nav ul.meniu > li:hover > ul {
 }
 
 /*# sourceMappingURL=nav.css.map */
+
