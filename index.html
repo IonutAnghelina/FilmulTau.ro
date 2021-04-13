@@ -30,7 +30,8 @@
 
 	<link rel="stylesheet" href="./css/index-1400.css" type="text/css" media="screen and (max-width:1400px)" />
 	<link rel="stylesheet" href="./css/index-600.css" type="text/css" media="screen and (max-width:600px)" />
-	<link rel="stylesheet" href="./css/nav.scss">
+	<link rel="stylesheet" href="./css/nav.css">
+	<link rel="stylesheet" href="./css/nav-mic.css" type="text/css" media="screen and (max-width:600px)" />
 	
 </head>
 
@@ -59,35 +60,38 @@
 
 		<nav>
             
-				
+			<label id="hamburger" for="ch-menu">
+				<img src="./Hamburger_icon_alb.png" alt="menu">
+			</label>
+		
 			<input id="ch-menu" type="checkbox">
 			<ul class="meniu">
-				<li><div>Acasa</div>
+				<li><div class="mainOption">Acasa</div>
 					<ul>
-						<li><a href="#Oferte">Oferte</a></li>
-						<li><a href="#Stiri">Ultimele Stiri</a></li>
-						<li><a href="#Program">Program</a></li>
-						<li><a href="#index-intrebari">FAQ</a></li>
+						<li><a href="#Oferte" class="suboption">Oferte</a></li>
+						<li><a href="#Stiri" class="suboption">Stiri</a></li>
+						<li><a href="#Program" class="suboption">Program</a></li>
+						<li><a href="#index-intrebari" class="suboption">FAQ</a></li>
 					</ul>
 				</li>
 				<li>
-					<div>Contul meu</div>
+					<div class="mainOption">Contul meu</div>
 					<ul>
-					<li><a href="loginpage.html">Conecteaza-te</a></li>
-					<li><a href="signuppage.html">Inregistreaza-te</a></li>
+					<li><a href="loginpage.html" class="suboption">Conectare</a></li>
+					<li><a href="signuppage.html" class="suboption">Inregistrare</a></li>
 					</ul>
 				</li>
 			
-				<li><div>Despre Noi</div>
+				<li><div class="mainOption">Despre Noi</div>
 					<ul>                        
-						<li><a href="TBD">Prezentare</a></li>
-						<li><a href="TBD">Scop</a></li>
-						<li><a href="TBD">Locatii</a></li>
-						<li><a href="TBD">Galerie</a></li>
+						<li><a href="TBD" class="suboption">Prezentare</a></li>
+						<li><a href="TBD" class="suboption">Scop</a></li>
+						<li><a href="TBD" class="suboption">Locatii</a></li>
+						<li><a href="TBD" class="suboption">Galerie</a></li>
 					</ul>
 				</li>
 				
-				<li><a href="#Contact">Contact</a></li>
+				<li class="mainOption"><div><a href="#Contact">Contact</a></div></li>
 			</ul>
 		</nav>	
 		<main>
