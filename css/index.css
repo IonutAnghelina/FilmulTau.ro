@@ -134,51 +134,6 @@ figcaption
 }
 
 
-
-.ifr-video {
-    border: 5px solid white;
-}
-
-.Trailers {
-    display: flex;
-    flex-direction: row;
-}
-
-.taburi-iframe a {
-    text-decoration: none;
-    width: 100px;
-    /*ca sa se comporte ca un bloc in sensul ca sa ii dau dimensiuni
-    dar sa vina unele langa altele ca elemente inline, nu unele sub altele
-    
-    --- in task aveti de facut cu flexbox
-    */
-    display: inline-block;
-    border: 1px solid white;
-    /*fara border in partea de jos*/
-    border-left: none;
-    /*rotunjesc doar colturile de sus:*/
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    background-image: linear-gradient(white, white 50%, silver);
-    color: var(--color6);
-    transition: all 0.5s linear;
-    text-align: center;
-}
-
-.taburi-iframe a+a {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-}
-
-.taburi-iframe a:hover {
-    color: white;
-    /*ca sa anulez efectul gradientului si sa se vada imaginea din spate*/
-    background-image: none;
-    background-color: black;
-    width: 150px;
-}
-
 #homeLink
 {
     text-decoration: none;
