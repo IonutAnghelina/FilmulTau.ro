@@ -13,6 +13,8 @@ nav {
   padding: 0;
   background: purple;
   position: sticky;
+  z-index:10;
+  
 }
 
 nav ul.meniu > li {
@@ -68,8 +70,9 @@ nav ul.meniu li div {
 
 
 ul.meniu div:hover {
-    
-    background-image: radial-gradient(purple,white);
+  
+  
+  box-shadow: inset 1px 1px 5px 5px white;
    /**animation-name: animatieMeniu1;
    animation-iteration-count: 1;
    animation-duration: 1s;**/
@@ -145,6 +148,8 @@ nav ul.meniu > li:hover > ul {
     opacity: 1;
   }
 }
+
+
 
 /*# sourceMappingURL=nav.css.map */
 
