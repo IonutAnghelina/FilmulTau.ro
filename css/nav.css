@@ -11,7 +11,7 @@ nav {
   width: 100%;
   top: 0;
   padding: 0;
-  background: purple;
+  background: var(--navbg);
   position: sticky;
   z-index:10;
   
@@ -38,7 +38,7 @@ nav ul.meniu li {
   text-align: center;
   /*ascundem bullets*/
   list-style-type: none;
-  background: purple;
+  background: var(--navbg);
   cursor: pointer;
 }
 
@@ -80,7 +80,7 @@ ul.meniu div:hover {
 
 ul.meniu .suboption:hover
 {
-    background:red;
+    background:var(--bannerText);
 }
 
 .suboption::before
@@ -91,7 +91,7 @@ ul.meniu .suboption:hover
 
 ul.meniu .suboption:hover
 {
-    background:red;
+    background:var(--bannerText);
 }
 
 ul.meniu .suboption:hover:before

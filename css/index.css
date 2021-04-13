@@ -3,13 +3,7 @@
 @import "nav.css";
 @import "nav.scss";
 
-:root {
-    --bgColor: #FFDBDB;
-    --color2: #8E94DE;
-    --color3: #A9F5C1;
-    --color4: #E0D8B6;
-    --color5: #FA918D;
-}
+
 
 html {
     /*am setat font-size-ul radacinii; unitatile in rem vor fi relative la acest font-size*/
@@ -23,7 +17,7 @@ body {
     --body-padding: 1rem;
     --padding-intern: 4%;
     /*am adaugat doua imagini de background separandu-le cu virgula*/
-    background: var(--color3);
+    background: var(--bgColor);
     /* background-ul va ramane fix cand dam scroll*/
     background-attachment: fixed;
     /*imaginea de background sa acopere tot containerul*/
@@ -240,7 +234,7 @@ figcaption
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background-image: linear-gradient(white, white 50%, silver);
-    color: crimson;
+    color: var(--color6);
     transition: all 0.5s linear;
     text-align: center;
 }

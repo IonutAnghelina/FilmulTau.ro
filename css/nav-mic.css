@@ -53,7 +53,7 @@ ul.meniu div:hover {
   ul.meniu .suboption:hover
   {
       box-shadow: inset 1px 1px 5px 5px white;
-      background: purple;
+      background: var(--navBg);
   }
   
   .suboption::before

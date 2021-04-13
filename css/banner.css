@@ -1,6 +1,6 @@
 #banner
 {
-    background:orange;
+    background:var(--bannerColor);
     color: black;
     text-align: center;
     position:relative;
@@ -16,10 +16,10 @@
 
 @keyframes bannerAnimation
 {
-    0% {background: orange; top:0px;color:black;opacity:1;}
-    25%   {background: cyan; top: -20px;color:red;opacity:1;}
-    50% {background: orange; top:0px;color:black;opacity:1;}
-    99% {background: orange; top:0px;color:black;opacity:1;}
+    0% {background: var(--bannerColor); top:0px;color:black;opacity:1;}
+    25%   {background: var(--secBanner); top: -20px;color:var(--bannerText);opacity:1;}
+    50% {background: var(--bannerColor); top:0px;color:black;opacity:1;}
+    99% {background: var(--bannerColor); top:0px;color:black;opacity:1;}
     100% {opacity:0;}
 }
 

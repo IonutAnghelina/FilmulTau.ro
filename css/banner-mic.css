@@ -1,6 +1,6 @@
 #banner
 {
-    background:orange;
+    background:var(--bannerColor);
     color: black;
     text-align: center;
 
