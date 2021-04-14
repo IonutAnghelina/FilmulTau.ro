@@ -1,54 +1,67 @@
-#orar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#orar{
+    counter-reset: cnt;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+
+
+
+#tab-orar{
+    border-collapse:collapse;
+}
+
+.col-title{
+    background-image: linear-gradient(var(--color4),var(--color2),var(--color4));
+    
+    
+}
+
+
+
+.odd-col
+{
+    background:lightyellow;
+}
+
+.even-col
+{
+    background:lightblue;
 }
 
 #tab-orar {
-  border-collapse: collapse;
+    border-collapse:collapse;
+    border:solid black 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
+    overflow: hidden;
 }
 
-.col-title {
-  background-image: linear-gradient(var(--color4), var(--color2), var(--color4));
+td
+{
+    counter-increment: cnt;
 }
-
-#tab-orar {
-  border-collapse: collapse;
-  border: solid black 1px;
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  overflow: hidden;
-}
-
-
 td, th {
-  border-left: solid black 1px;
-  border-top: solid black 1px;
+    border-left:solid black 1px;
+    border-top:solid black 1px;
 }
 
 th {
-  background-color: blue;
-  border-top: none;
+    background-color: var(--color9);
+    border-top: none;
 }
 
-#tabel {
-  overflow-x: auto;
-}
-
-.actualTableRow:hover td {
-  background: purple;
-  color: yellow;
-}
-
-/*# sourceMappingURL=orar.css.map */
 
 
-td:nth-child(even)
+
+#tabel
 {
-    background: var(--color7);
+    overflow-x: auto;
 }
 
-td:nth-child(odd)
+.actualTableRow:hover td
 {
-    background: var(--color8);
+    background:var(--navbg);
+    color:var(--color10);
 }

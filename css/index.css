@@ -106,7 +106,7 @@ summary{
 }
 
 strong{
-    color:red;
+    color:var(--bannerText);
 }
 
 .quote
@@ -117,11 +117,11 @@ strong{
 
 s
 {
-    color:red;
+    color:var(--bannerText);
 }
 ins
 {
-    color:blue;
+    color:var(--color9);
 }
 
 .anunturi
@@ -131,7 +131,14 @@ ins
 
 h2
 {
-    color:purple;
+    color:var(--navbg);
     font-size: 1em;
     font-family: 'Trirong', cursive;
+}
+
+#g1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
