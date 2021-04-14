@@ -62,5 +62,13 @@ ul.meniu div:hover {
       opacity:0;
   }
   
+ .homeText
+ {
+     display:none;
+ }
 
-  
+
+ #homeIcon
+{
+  display:initial;
+}

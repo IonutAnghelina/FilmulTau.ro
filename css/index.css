@@ -48,8 +48,9 @@ main {
 
 
 
-.h1>span {
-    font-family: 'Dancing Script', cursive;
+header {
+    font-family: 'Tangerine', cursive;
+    font-size: 100px;
 }
 
 
