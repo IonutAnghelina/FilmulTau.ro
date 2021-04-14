@@ -99,3 +99,39 @@ figcaption
 {
     content:"A"counter(cnt)". ";
 }
+
+summary{
+    background-image: linear-gradient(white, white 50%,var(--color11));
+    color: var(--color6);
+}
+
+strong{
+    color:red;
+}
+
+.quote
+{
+    font-size:3em;
+    font-family: 'Tangerine', cursive;
+}
+
+s
+{
+    color:red;
+}
+ins
+{
+    color:blue;
+}
+
+.anunturi
+{
+    list-style-type: '👉.';
+}
+
+h2
+{
+    color:purple;
+    font-size: 1em;
+    font-family: 'Trirong', cursive;
+}

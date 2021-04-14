@@ -24,7 +24,7 @@
     /*rotunjesc doar colturile de sus:*/
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-image: linear-gradient(white, white 50%, silver);
+    background-image: linear-gradient(white, white 50%,var(--color11));
     color: var(--color6);
     transition: all 0.5s linear;
     text-align: center;
