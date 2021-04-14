@@ -121,7 +121,7 @@ ul.meniu .suboption:hover {
 
 .suboption::before {
   content: "→";
-  opacity: 0;
+  display:none;
 }
 
 ul.meniu .suboption:hover {
@@ -130,6 +130,7 @@ ul.meniu .suboption:hover {
 
 ul.meniu .suboption:hover:before {
   opacity: 1;
+  display:initial;
 }
 
 /*# sourceMappingURL=nav.css.map */
