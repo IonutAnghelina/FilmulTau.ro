@@ -2,6 +2,12 @@ $mainColor:purple;
 $menuHeight:3rem;
 $lightColor:pink;
 
+
+@mixin position {
+  padding: 0;
+  margin: 0;
+}
+
 nav ul.meniu ul {
   /*implicit submeniul e ascuns*/
   display: none;
@@ -29,20 +35,16 @@ nav {
   }
 }
 
+$tags:ul li;
+
 nav {
-  ul {
-    padding: 0;
-    margin: 0;
+  @each $tag in $tags
+  {
+    #{$tag}
+    {
+      @include position;
+    }
   }
-
-  ;
-
-  li {
-    padding: 0;
-    margin: 0;
-  }
-
-  ;
 }
 
 nav ul.meniu li {
@@ -51,58 +53,47 @@ nav ul.meniu li {
 
   /*ascundem bullets*/
   list-style-type: none;
-  background: purple;
+  background: $mainColor;
   cursor: pointer;
 }
 
+@mixin colorPack
+{
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-weight: bold;
+    /*inaltimea butonului si inaltimea liniei de text sunt identice 
+    pentru a centra textul pe verticala in element
+     - merge doar daca textul are o singura linie*/
+  height: $menuHeight;
+  line-height: $menuHeight;
+  outline: 1px solid black;
+}
 
+$tags: a div; 
 nav ul.meniu li {
-  a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    font-weight: bold;
-    /*inaltimea butonului si inaltimea liniei de text sunt identice 
-    pentru a centra textul pe verticala in element
-     - merge doar daca textul are o singura linie*/
-    height: $menuHeight;
-    line-height: $menuHeight;
-    outline: 1px solid black;
+  @each $tag in $tags
+  {
+    #{$tag}
+    {
+      @include colorPack;
+    }
   }
-
-  div {
-    text-decoration: none;
-    color: black;
-    display: block;
-    font-weight: bold;
-    /*inaltimea butonului si inaltimea liniei de text sunt identice 
-    pentru a centra textul pe verticala in element
-     - merge doar daca textul are o singura linie*/
-    height: $menuHeight;
-    line-height: $menuHeight;
-    outline: 1px solid black;
-  }
-
+  
 }
 
-ul.meniu {
-  a:hover {
-    background: $lightColor;
-  }
-
-  div:hover {
-    background: $lightColor;
-  }
-}
+$tags: a div;
 
 ul.meniu {
-  a {
-    transition: background 700ms linear;
+  @each $tag in $tags
+  {
+    #{$tag}
+    {
+      transition: background 700ms linear;
+    }
   }
-
-  div {
-    transition: background 700ms linear;
-  }
+ 
 }
 
 nav ul.meniu>li:hover>ul {
@@ -138,4 +129,35 @@ nav ul.meniu>li:hover>ul {
   100% {
     opacity: 1;
   }
+}
+
+#homeIcon {
+  display: none;
+}
+
+ul.meniu div:hover {
+
+
+  box-shadow: inset 1px 1px 5px 5px white;
+  /**animation-name: animatieMeniu1;
+   animation-iteration-count: 1;
+   animation-duration: 1s;**/
+}
+
+ul.meniu .suboption:hover {
+  background: var(--bannerText);
+}
+
+.suboption::before {
+  content: "\2192";
+  opacity: 0;
+}
+
+ul.meniu .suboption:hover {
+  background: var(--bannerText);
+}
+
+ul.meniu .suboption:hover:before {
+  opacity: 1;
+
 }

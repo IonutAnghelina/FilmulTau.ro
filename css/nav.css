@@ -1,3 +1,4 @@
+@charset "UTF-8";
 nav ul.meniu ul {
   /*implicit submeniul e ascuns*/
   display: none;
@@ -11,10 +12,8 @@ nav {
   width: 100%;
   top: 0;
   padding: 0;
-  background: var(--navbg);
+  background: purple;
   position: sticky;
-  z-index:10;
-  
 }
 
 nav ul.meniu > li {
@@ -38,7 +37,7 @@ nav ul.meniu li {
   text-align: center;
   /*ascundem bullets*/
   list-style-type: none;
-  background: var(--navbg);
+  background: purple;
   cursor: pointer;
 }
 
@@ -67,55 +66,12 @@ nav ul.meniu li div {
   outline: 1px solid black;
 }
 
-
-
-ul.meniu div:hover {
-  
-  
-  box-shadow: inset 1px 1px 5px 5px white;
-   /**animation-name: animatieMeniu1;
-   animation-iteration-count: 1;
-   animation-duration: 1s;**/
-}
-
-ul.meniu .suboption:hover
-{
-    background:var(--bannerText);
-}
-
-.suboption::before
-{   
-    content: "\2192";
-    opacity:0;
-}
-
-ul.meniu .suboption:hover
-{
-    background:var(--bannerText);
-}
-
-ul.meniu .suboption:hover:before
-{
-    opacity:1;
-    
-}
-/**@keyframes animatieMeniu1 {
-    0% {
-      background-image:purple;
-    }
-    100% {
-      background-image: radial-gradient(purple,white);
-    }
-  }**/
-
-
 ul.meniu a {
   transition: background 700ms linear;
 }
 ul.meniu div {
   transition: background 700ms linear;
 }
-
 
 nav ul.meniu > li:hover > ul {
   display: block;
@@ -148,11 +104,32 @@ nav ul.meniu > li:hover > ul {
     opacity: 1;
   }
 }
-
-
-#homeIcon
-{
-  display:none;
+#homeIcon {
+  display: none;
 }
-/*# sourceMappingURL=nav.css.map */
 
+ul.meniu div:hover {
+  box-shadow: inset 1px 1px 5px 5px white;
+  /**animation-name: animatieMeniu1;
+   animation-iteration-count: 1;
+   animation-duration: 1s;**/
+}
+
+ul.meniu .suboption:hover {
+  background: var(--bannerText);
+}
+
+.suboption::before {
+  content: "→";
+  opacity: 0;
+}
+
+ul.meniu .suboption:hover {
+  background: var(--bannerText);
+}
+
+ul.meniu .suboption:hover:before {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=nav.css.map */
