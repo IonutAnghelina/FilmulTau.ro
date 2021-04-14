@@ -44,6 +44,7 @@ main {
     --main-border: 1px solid grey;
     border-left: grey;
     border-right: grey;
+    counter-reset: cnt;
 }
 
 
@@ -87,4 +88,14 @@ figcaption
 {
     text-decoration: none;
     color:black;
+}
+
+.anunt
+{
+    counter-increment: cnt;
+}
+
+.anunt::before
+{
+    content:"A"counter(cnt)". ";
 }

@@ -20,13 +20,6 @@
   overflow: hidden;
 }
 
-.odd-col {
-  background: var(--color7);
-}
-
-.even-col {
-  background: var(--color8);
-}
 
 td, th {
   border-left: solid black 1px;
@@ -48,3 +41,14 @@ th {
 }
 
 /*# sourceMappingURL=orar.css.map */
+
+
+td:nth-child(even)
+{
+    background: var(--color7);
+}
+
+td:nth-child(odd)
+{
+    background: var(--color8);
+}
