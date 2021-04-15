@@ -6,37 +6,34 @@
 
 
 html {
-    /*am setat font-size-ul radacinii; unitatile in rem vor fi relative la acest font-size*/
+
     font-size: 16px;
 }
 
 body {
-    
+
     margin-top: 0;
     margin-bottom: 0;
     --body-padding: 1rem;
     --padding-intern: 4%;
-    /*am adaugat doua imagini de background separandu-le cu virgula*/
+
     background: var(--bgColor);
-    /* background-ul va ramane fix cand dam scroll*/
+
     background-attachment: fixed;
-    /*imaginea de background sa acopere tot containerul*/
+
     background-size: cover;
     padding-left: var(--body-padding);
     padding-right: var(--body-padding);
     padding-top: 0;
     padding-bottom: 0;
-    /*nu permite body-ului sa se micsoreze mai mult de atat
-    deoarece pagina nu ar mai putea fi parcursa
-    trebuie mereu setata o latime minima pentru pagina
-    pentru a nu risca sa avem afisat cate un singur cuvant pe rand...*/
+
     min-width: 330px;
-    /*latimea minima trebuie sa fie mai mica decat orice latime de dispozitiv pentru a nu avea scroll orizontal*/
+
 }
 
 h1 {
     font-size: 3rem;
-    /* de 3 ori mai mare decat dimensiunea de font a html-ului*/
+
     text-shadow: 0px 0px 1px black, 0px 0px 2px black, 0px 0px 4px white, 0px 0px 4px white, 0px 0px 4px white;
 }
 
@@ -59,10 +56,10 @@ header {
 
 
 #grid-pagina section {
-    /*outline:1px solid orange;*/
+
     border: 2px dotted var(--color2);
     padding: 1rem;
-}   
+}
 
 #grid-pagina>figure {
     width: 100%;
@@ -77,67 +74,58 @@ figure img {
     width: 100%;
 }
 
-figcaption
-{
-    text-align:center;
+figcaption {
+    text-align: center;
 }
 
 
 
-#homeLink
-{
+#homeLink {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.anunt
-{
+.anunt {
     counter-increment: cnt;
 }
 
-.anunt::before
-{
-    content:"A"counter(cnt)". ";
+.anunt::before {
+    content: "A"counter(cnt)". ";
 }
 
-summary{
-    background-image: linear-gradient(white, white 50%,var(--color11));
+summary {
+    background-image: linear-gradient(white, white 50%, var(--color11));
     color: var(--color6);
 }
 
-strong{
-    color:var(--bannerText);
+strong {
+    color: var(--bannerText);
 }
 
-.quote
-{
-    font-size:3em;
+.quote {
+    font-size: 3em;
     font-family: 'Tangerine', cursive;
 }
 
-s
-{
-    color:var(--bannerText);
-}
-ins
-{
-    color:var(--color9);
+s {
+    color: var(--bannerText);
 }
 
-.anunturi
-{
+ins {
+    color: var(--color9);
+}
+
+.anunturi {
     list-style-type: '👉.';
 }
 
-h2
-{
-    color:var(--navbg);
+h2 {
+    color: var(--navbg);
     font-size: 1em;
     font-family: 'Trirong', cursive;
 }
 
-#g1
-{
+#g1 {
     display: flex;
     flex-direction: column;
     justify-content: left;

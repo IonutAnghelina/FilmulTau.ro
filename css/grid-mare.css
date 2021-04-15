@@ -41,13 +41,13 @@
 
 main {
     display: grid;
-    grid-template-areas:  
-    "g1     g1     g1     g1"
-    "g3     g2     g2     g4"
-    "g8     g8     g8     g8"
-    "g7     g7     g5     g6";
+    grid-template-areas:
+        "g1     g1     g1     g1"
+        "g3     g2     g2     g4"
+        "g8     g8     g8     g8"
+        "g7     g7     g5     g6";
 
     padding: var(--padding-intern);
-    /*spatiu intre celulele de grid*/
+
     grid-gap: 2rem;
 }

@@ -1,8 +1,7 @@
-#banner
-{
-    background:var(--bannerColor);
+#banner {
+    background: var(--bannerColor);
     color: black;
     text-align: center;
 
-    opacity:0;
+    opacity: 0;
 }

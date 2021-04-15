@@ -1,9 +1,7 @@
 @charset "UTF-8";
 nav ul.meniu ul {
-  /*implicit submeniul e ascuns*/
   display: none;
   position: absolute;
-  /* ca sa il scot din container pe alt layer, sa nu imi deplaseze continutul cand devine vizibil*/
   width: 100%;
 }
 
@@ -20,7 +18,6 @@ nav ul.meniu > li {
   float: left;
   width: 100px;
   position: relative;
-  /* pentru ca submeniul pozitionat relativ sa aiba ca referinta parintele li*/
 }
 
 nav ul {
@@ -33,9 +30,7 @@ nav li {
 }
 
 nav ul.meniu li {
-  /*text centrat pe orizontala*/
   text-align: center;
-  /*ascundem bullets*/
   list-style-type: none;
   background: purple;
   cursor: pointer;
@@ -46,9 +41,6 @@ nav ul.meniu li a {
   color: black;
   display: block;
   font-weight: bold;
-  /*inaltimea butonului si inaltimea liniei de text sunt identice 
-  pentru a centra textul pe verticala in element
-   - merge doar daca textul are o singura linie*/
   height: 3rem;
   line-height: 3rem;
   outline: 1px solid black;
@@ -58,9 +50,6 @@ nav ul.meniu li div {
   color: black;
   display: block;
   font-weight: bold;
-  /*inaltimea butonului si inaltimea liniei de text sunt identice 
-  pentru a centra textul pe verticala in element
-   - merge doar daca textul are o singura linie*/
   height: 3rem;
   line-height: 3rem;
   outline: 1px solid black;
@@ -110,9 +99,6 @@ nav ul.meniu > li:hover > ul {
 
 ul.meniu div:hover {
   box-shadow: inset 1px 1px 5px 5px white;
-  /**animation-name: animatieMeniu1;
-   animation-iteration-count: 1;
-   animation-duration: 1s;**/
 }
 
 ul.meniu .suboption:hover {
@@ -121,7 +107,7 @@ ul.meniu .suboption:hover {
 
 .suboption::before {
   content: "→";
-  display:none;
+  opacity: 0;
 }
 
 ul.meniu .suboption:hover {
@@ -130,7 +116,6 @@ ul.meniu .suboption:hover {
 
 ul.meniu .suboption:hover:before {
   opacity: 1;
-  display:initial;
 }
 
 /*# sourceMappingURL=nav.css.map */

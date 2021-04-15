@@ -9,10 +9,10 @@ $lightColor:pink;
 }
 
 nav ul.meniu ul {
-  /*implicit submeniul e ascuns*/
+
   display: none;
   position: absolute;
-  /* ca sa il scot din container pe alt layer, sa nu imi deplaseze continutul cand devine vizibil*/
+
   width: 100%;
 }
 
@@ -31,69 +31,61 @@ nav {
     float: left;
     width: 100px;
     position: relative;
-    /* pentru ca submeniul pozitionat relativ sa aiba ca referinta parintele li*/
+
   }
 }
 
 $tags:ul li;
 
 nav {
-  @each $tag in $tags
-  {
-    #{$tag}
-    {
+  @each $tag in $tags {
+    #{$tag} {
       @include position;
     }
   }
 }
 
 nav ul.meniu li {
-  /*text centrat pe orizontala*/
+
   text-align: center;
 
-  /*ascundem bullets*/
+
   list-style-type: none;
   background: $mainColor;
   cursor: pointer;
 }
 
-@mixin colorPack
-{
+@mixin colorPack {
   text-decoration: none;
   color: black;
   display: block;
   font-weight: bold;
-    /*inaltimea butonului si inaltimea liniei de text sunt identice 
-    pentru a centra textul pe verticala in element
-     - merge doar daca textul are o singura linie*/
+
   height: $menuHeight;
   line-height: $menuHeight;
   outline: 1px solid black;
 }
 
-$tags: a div; 
+$tags: a div;
+
 nav ul.meniu li {
-  @each $tag in $tags
-  {
-    #{$tag}
-    {
+  @each $tag in $tags {
+    #{$tag} {
       @include colorPack;
     }
   }
-  
+
 }
 
 $tags: a div;
 
 ul.meniu {
-  @each $tag in $tags
-  {
-    #{$tag}
-    {
+  @each $tag in $tags {
+    #{$tag} {
       transition: background 700ms linear;
     }
   }
- 
+
 }
 
 nav ul.meniu>li:hover>ul {
@@ -139,9 +131,7 @@ ul.meniu div:hover {
 
 
   box-shadow: inset 1px 1px 5px 5px white;
-  /**animation-name: animatieMeniu1;
-   animation-iteration-count: 1;
-   animation-duration: 1s;**/
+
 }
 
 ul.meniu .suboption:hover {
